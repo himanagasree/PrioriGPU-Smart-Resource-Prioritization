@@ -1,0 +1,11 @@
+
+import seaborn as sns
+import matplotlib.pyplot as plt
+
+# Load your CSV
+df = pd.read_csv("greenland_dataset.csv")
+
+# Plot
+sns.boxplot(x="priority", y="roi_score", data=df)
+plt.title("ROI Score by Project Priority")
+plt.show()
